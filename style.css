@@ -23,7 +23,7 @@ body {
 }
 
 .hero-landing {
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(
     rgba(0, 0, 0, 0.6), 
     rgba(0, 0, 0, 0.4)
@@ -33,6 +33,7 @@ body {
   justify-content: center;
   position: relative;
   text-align: center;
+  padding: 2rem 0;
 }
 
 .hero-overlay {
@@ -772,6 +773,11 @@ body {
     max-width: 95%;
   }
   
+  .hero-landing {
+    min-height: 100vh;
+    padding: 1.5rem 0;
+  }
+  
   .hero-tagline {
     font-size: 1rem;
     line-height: 1.4;
@@ -782,6 +788,13 @@ body {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+  }
+  
+  .scroll-indicator {
+    position: relative;
+    bottom: auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -858,13 +871,18 @@ body {
   }
   
   .social-icons {
-    margin-bottom: 100px;
+    margin-bottom: 2rem;
   }
 }
 
 @media (max-width: 768px) {
   .container {
     padding: 0 1rem;
+  }
+  
+  .hero-landing {
+    min-height: 100vh;
+    padding: 1rem 0;
   }
   
   .hero-title {
@@ -918,7 +936,7 @@ body {
   
   .social-icons {
     gap: 1rem;
-    margin-bottom: 120px;
+    margin-bottom: 2rem;
   }
   
   .social-icon {
@@ -1005,6 +1023,11 @@ body {
     padding: 0 0.8rem;
   }
   
+  .hero-landing {
+    min-height: 100vh;
+    padding: 1rem 0 2rem 0;
+  }
+  
   .hero-content {
     padding: 1.5rem 0.8rem;
     max-width: 95%;
@@ -1060,7 +1083,14 @@ body {
   
   .social-icons {
     gap: 0.8rem;
-    margin-bottom: 140px;
+    margin-bottom: 2rem;
+  }
+  
+  .scroll-indicator {
+    position: relative;
+    bottom: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
   }
   
   .social-icon {
@@ -1292,12 +1322,28 @@ body {
     max-width: 99%;
   }
   
+  .hero-landing {
+    min-height: 100vh;
+    padding: 0.5rem 0 1.5rem 0;
+  }
+  
   .hero-buttons {
     margin-bottom: 1.5rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 0.8rem;
+  }
+  
+  .social-icons {
+    margin-bottom: 1.5rem;
+  }
+  
+  .scroll-indicator {
+    position: relative;
+    bottom: auto;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
   }
   
   .hero-stats {
@@ -1323,6 +1369,22 @@ body {
     align-items: center;
     justify-content: center;
     gap: 0.6rem;
+  }
+  
+  .social-icons {
+    margin-bottom: 1rem;
+  }
+  
+  .scroll-indicator {
+    position: relative;
+    bottom: auto;
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-landing {
+    min-height: 100vh;
+    padding: 0.5rem 0 1rem 0;
   }
   
   .social-icon {
